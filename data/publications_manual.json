@@ -1,0 +1,117 @@
+{
+  "_comment": "Manual overrides + extra publications. Match by title (case-insensitive) or DOI. Author info here also overrides what's auto-fetched.",
+  "_filtering": "DBLP merges multiple researchers named 'Dongming Han'. By default only papers with a known VAG co-author are kept. Add (substring of) title to 'include_low_confidence' to opt-in others; add to 'exclude' to drop. Papers in the 'publications' list below that aren't in DBLP get added on top.",
+
+  "author": {
+    "name": "Dongming Han",
+    "name_zh": "韩东明",
+    "affiliation": "Hithink RoyalFlush AI Research Institute · Zhejiang University",
+    "interests": [
+      "Code Generation & AIGC",
+      "Information Visualization",
+      "Visual Analytics",
+      "Graph Visualization"
+    ],
+    "email": "dongminghan@zju.edu.cn",
+    "_privacy_note": "Do NOT add a phone number here. data/publications.json is world-readable once deployed (https://<user>.github.io/data/publications.json), and the page never renders a phone anyway.",
+    "_social_help": "Fill orcid_url / linkedin_url to show the ORCID & LinkedIn pills (both languages) and add ORCID to the JSON-LD sameAs. affiliation_url adds a link to your org in the structured data. Then run: python3 fetch_scholar.py --use-cache",
+    "orcid_url": "",
+    "linkedin_url": "",
+    "affiliation_url": ""
+  },
+
+  "exclude": [],
+  "include_low_confidence": [
+    "SGCR: A Specification-Grounded Framework",
+    "Integrating Stock Features and Global Information",
+    "Adversarial and Cooperation Tasks"
+  ],
+  "keep_all_low_confidence": false,
+
+  "publications": [
+    {
+      "title": "Chart-FR1: Visual Focus-Driven Fine-Grained Reasoning on Dense Charts",
+      "authors": "Hongkun Pan, Yuwei Wu, Wanyi Hong, Shenghui Hu, Qitong Yan, Yi Yang, Rufei Han, Changju Zhou, Minfeng Zhu, Dongming Han, Wei Chen",
+      "year": "2026",
+      "venue": "CoRR (arXiv preprint)",
+      "doi": "https://doi.org/10.48550/arXiv.2605.01882",
+      "pdf_url": "https://arxiv.org/pdf/2605.01882",
+      "author_position": "middle",
+      "type": "manual",
+      "confidence": "high"
+    },
+    {
+      "_comment_sgcr": "Published version — ASE 2025 (CCF-A). Overrides the CoRR preprint record.",
+      "title": "SGCR: A Specification-Grounded Framework for Trustworthy LLM Code Review",
+      "authors": "Kai Wang, Bingcheng Mao, Shuai Jia, Yujie Ding, Dongming Han, Tianyi Ma, Bin Cao",
+      "year": "2025",
+      "venue": "ASE 2025 (IEEE/ACM International Conference on Automated Software Engineering)",
+      "doi": "https://doi.org/10.1109/ASE63991.2025.00315",
+      "pub_url": "https://doi.org/10.1109/ASE63991.2025.00315",
+      "pdf_url": "https://arxiv.org/pdf/2512.17540",
+      "author_position": "middle",
+      "type": "inproceedings",
+      "key": "conf/kbse/WangMJDHMC25",
+      "confidence": "high"
+    },
+    {
+      "title": "HiVis: A Web-Based Library for Financial Data Visualizations",
+      "authors": "Dongming Han, Rufei Han, Changjun Zhou, Ziyan Lin, Yi Hu, Yi Chai, Tianyi Ma, Haiyang Zhu, Wei Chen",
+      "year": "2025",
+      "venue": "ChinaVis 2025 (12th China Visualization and Visual Analytics Conference)",
+      "type": "manual",
+      "confidence": "high"
+    },
+    {
+      "title": "面向时序数据异常检测的可视分析综述 (A Survey on Visual Analysis of Anomaly Detection for Time-Series Data)",
+      "authors": "韩东明, 郭方舟, 潘嘉铖, 郑文庭, 陈为",
+      "year": "2018",
+      "venue": "计算机研究与发展 (Journal of Computer Research and Development)",
+      "type": "manual",
+      "confidence": "high"
+    },
+    {
+      "title": "联邦学习可视化: 挑战与框架 (Federated-Learning Visualization: Challenges and Framework)",
+      "authors": "潘如晟, 韩东明, 潘嘉铖, 周舒悦, 魏雅婷, 梅鸿辉, 陈为",
+      "year": "2020",
+      "venue": "计算机辅助设计与图形学学报 (Journal of Computer-Aided Design & Computer Graphics)",
+      "type": "manual",
+      "confidence": "high"
+    },
+    {
+      "title": "面向比特币交易网络的拓扑结构可视探索方法 (Topological Visual Exploration of the Bitcoin Transaction Network)",
+      "authors": "潘嘉铖, 韩东明, 郭方舟, 郑文庭, 于金辉, 陈为",
+      "year": "2019",
+      "venue": "软件学报 (Journal of Software)",
+      "type": "manual",
+      "confidence": "high"
+    },
+    {
+      "title": "A Visual Analytics Approach for Structural Differences among Transportation Networks",
+      "authors": "Dongming Han, Jiacheng Pan, Cong Xie, Xiaodong Zhao, Wei Chen",
+      "year": "2020",
+      "venue": "IEEE Pacific Visualization Symposium (Short Paper)",
+      "type": "manual",
+      "confidence": "high"
+    },
+    {
+      "title": "Adversarial and Cooperation Tasks in Multi-Agent System with Large Language Models",
+      "authors": "Shuai Jia, Zhe Cui, Kai Wang, Yujie Ding, Dongming Han, Tianyi Ma",
+      "year": "2024",
+      "venue": "IEEE International Conference on Unmanned Systems (ICUS)",
+      "type": "manual",
+      "confidence": "high"
+    },
+
+    { "_help_below": "Existing DBLP papers — add pdf_url / video_url / code_url / project_url here." },
+    {
+      "title": "iNet: visual analysis of irregular transition in multivariate dynamic networks",
+      "doi": "https://doi.org/10.1007/s11704-020-0013-1"
+    },
+    {
+      "title": "NetV.js: A web-based library for high-efficiency visualization of large-scale graphs and networks",
+      "code_url": "https://github.com/zjuvag/NetV.js",
+      "doi": "https://doi.org/10.1016/j.visinf.2021.01.002"
+    }
+  ]
+}

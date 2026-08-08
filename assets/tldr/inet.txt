@@ -1,0 +1,1 @@
+A glyph-based visual analytics system that surfaces *irregular transitions* and rare-category anomalies in multivariate dynamic networks.

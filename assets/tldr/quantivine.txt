@@ -1,0 +1,1 @@
+A scalable visualization that lets researchers explore **large-scale quantum circuits** by abstracting repetitive sub-circuits into multi-level summary glyphs.

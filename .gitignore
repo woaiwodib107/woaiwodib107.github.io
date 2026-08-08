@@ -1,0 +1,24 @@
+# Build / OS noise — none of this should be deployed to GitHub Pages
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+
+# Backups + local logs created by fetch_scholar.py runs
+*.bak
+*.log
+yuanbao-openclaw-install-*.log
+
+# Local-only Claude Code settings (the .local suffix is the convention)
+.claude/settings.local.json
+
+# Unrelated local backup that lives in this folder — contains API credentials
+# (openclaw.json: appKey/appSecret). MUST never be committed or published.
+.openclaw-yuanbao-backup/
+
+# Editor crud
+.idea/
+.vscode/
+*.swp
+*~

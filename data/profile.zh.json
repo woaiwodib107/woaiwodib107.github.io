@@ -1,0 +1,83 @@
+{
+  "_comment": "中文版本。与 profile.json 字段对齐，切换中文时加载此文件。",
+
+  "author_override": {
+    "name": "韩东明",
+    "affiliation": "核新同花顺 AI 研究院 · 浙江大学",
+    "interests": ["代码生成与 AIGC", "信息可视化", "可视分析", "图可视化"]
+  },
+
+  "bio": "我现任**浙江核新同花顺（Hithink RoyalFlush）AI 研究院** AIGC 代码生成方向的**算法负责人**，致力于构建面向人机协同开发的*企业级代码生成框架*、面向金融场景的*生成式可视分析*，以及面向垂直领域的*可视化叙事范式*——服务数千万用户、覆盖数十款产品。\n\n我于 2017–2023 年在*浙江大学 CAD&CG 国家重点实验室*完成**博士**学业（导师：陈为教授）；2021–2022 年受国家留学基金委资助，赴*慕尼黑工业大学*（导师：Rüdiger Westermann 教授）进行**博士联合培养**。2023–2025 年在核新同花顺与浙江大学联合开展**博士后研究**，方向为面向金融的视觉生成式大模型。\n\n现任**中国计算机学会（CCF）YOCSEF 杭州 AC 委员**。研究聚焦于 **代码生成、AIGC** 与 **信息可视化 / 可视分析** 的交叉。",
+
+  "tagline": "专注企业级代码生成、生成式可视分析与可视化叙事范式 —— 从金融出发，面向更广场景。",
+
+  "_selected_help": "按论文标题的（大小写不敏感）子串匹配；顺序决定展示顺序。中英文共用同一组英文关键字。",
+  "selected": [
+    "Quantivine",
+    "Nuwa",
+    "GraphFederator",
+    "iNet",
+    "Structure-Based Suggestive",
+    "NetV.js"
+  ],
+
+  "cta": {
+    "title": "加入我们",
+    "body": "我们正在积极招募**研究实习生**、**算法工程师**与**合作者**，加入同花顺 AIGC 代码生成与金融可视分析团队。如果你对*人机协同开发*、*视觉生成式大模型*或*工业级交互可视化*感兴趣，欢迎与我联系。",
+    "email": "dongminghan@zju.edu.cn",
+    "buttons": [
+      { "label": "邮件联系", "href": "mailto:dongminghan@zju.edu.cn" }
+    ]
+  },
+
+  "news": [
+    { "date": "2026-05", "text": "新预印本：*Chart-FR1：面向密集图表的视觉聚焦细粒度推理* 已发布于 **arXiv**。" },
+    { "date": "2025-11", "text": "在核新同花顺 × 浙江大学顺利完成**博士后研究**。" },
+    { "date": "2025-10", "text": "获 *PacificVis 2025 可视化故事大赛* **Winner 奖**。" },
+    { "date": "2025-09", "text": "*SGCR：基于规约的可信 LLM 代码评审框架* 被 **ASE 2025**（CCF-A）录用。" },
+    { "date": "2025-07", "text": "*HiVis：金融数据可视化 Web 库* 被 **ChinaVis 2025** 录用。" },
+    { "date": "2025-06", "text": "*基于摘要的模式感知矩阵重排方法* 被 **JCST**（CCF-B）录用。" },
+    { "date": "2024-09", "text": "获 *2024 浙江省博士后科研项目择优资助（二等）* —— **项目负责人**。" },
+    { "date": "2024-06", "text": "入围 **PacificVis 2024 可视化故事大赛** 前三。" },
+    { "date": "2024-04", "text": "两篇论文被 **PacificVis 2024** 录用：*Nuwa: An Authoring Tool for Graph Visualizations* 与 *GraphFederator*。" },
+    { "date": "2023-08", "text": "获 *ChinaVis 2023 数据挑战赛* **一等奖**。" },
+    { "date": "2023-04", "text": "加入**核新同花顺**任 AIGC 代码生成算法负责人。" },
+    { "date": "2023-03", "text": "于浙江大学通过博士论文答辩。" }
+  ],
+
+  "awards": [
+    { "year": "2025", "title": "Winner 奖 — PacificVis 2025 可视化故事大赛", "issuer": "IEEE PacificVis", "url": "" },
+    { "year": "2024", "title": "入围前三 — PacificVis 2024 可视化故事大赛", "issuer": "IEEE PacificVis", "url": "" },
+    { "year": "2024", "title": "示范引领奖 — 中国（宁波）智能产品创新大赛", "issuer": "中国（宁波）智能产品创新大赛组委会", "url": "" },
+    { "year": "2024", "title": "银奖 — 美国 Good Design 国际设计大赛", "issuer": "American Good Design", "url": "" },
+    { "year": "2023", "title": "一等奖 — ChinaVis 2023 数据挑战赛", "issuer": "ChinaVis", "url": "" }
+  ],
+
+  "patents": [
+    { "year": "2024", "title_zh": "一种数据生成方法、装置、设备及可读存储介质", "title_en": "A Method and Apparatus for Data Generation", "number": "CN119512674B", "inventors": "韩东明、丁子翔、高军、王建波", "status": "Granted" },
+    { "year": "2023", "title_zh": "一种针对供应链数据缺失的补全方法及装置", "title_en": "A Method for Imputation of Supply-Chain Missing Data", "number": "CN116450653B", "inventors": "朱海洋、陈为、潘嘉铖、韩东明、魏雅婷、翁洛轩 等", "status": "Granted" },
+    { "year": "2022", "title_zh": "一种相似交易模式的快速查找方法", "title_en": "Fast Lookup of Similar Transaction Patterns", "number": "CN108804599B", "inventors": "陈为、韩东明、郭方舟、潘嘉铖、聂小涛", "status": "Granted" },
+    { "year": "2020", "title_zh": "一种多网络结构差异向量化方法及装置", "title_en": "Vectorization of Multi-Network Structural Differences", "number": "CN112073217B", "inventors": "陈为、韩东明、潘嘉铖、赵晓东、符思伟", "status": "Granted" },
+    { "year": "2020", "title_zh": "一种相似子图间实体对应关系的快速查找方法", "title_en": "Fast Lookup of Entity Correspondences across Similar Subgraphs", "number": "CN108829770B", "inventors": "陈为、韩东明、郭方舟、潘嘉铖、聂小涛", "status": "Granted" },
+    { "year": "2019", "title_zh": "一种排名趋势和排名稳定性的影响因素的快速查找方法", "title_en": "Fast Lookup of Factors Influencing Ranking Trends and Stability", "number": "CN107315773B", "inventors": "陈为、郭方舟、韩东明", "status": "Granted" }
+  ],
+
+  "projects": [
+    { "year": "2024 — 至今", "title": "面向金融可视分析的视觉生成式大模型", "role": "项目负责人", "funder": "浙江省博士后科研项目择优资助（二等）", "number": "ZJ2024117" },
+    { "year": "2024 — 至今", "title": "群智能产业链风险监测平台（尖兵领雁+X）", "role": "核心成员", "funder": "浙江省科学技术厅", "number": "2024C01034" }
+  ],
+
+  "experience": [
+    { "period": "2023.04 — 至今", "role": "算法负责人 · AIGC 代码生成", "org": "核新同花顺 AI 研究院", "location": "中国杭州" },
+    { "period": "2023.11 — 2025.11", "role": "博士后研究员", "org": "核新同花顺 × 浙江大学 · 面向金融的视觉生成式大模型", "location": "中国杭州" },
+    { "period": "2021.08 — 2022.08", "role": "博士联合培养（CSC 资助）", "org": "慕尼黑工业大学 · 计算机图形与可视化实验室（Rüdiger Westermann 教授）", "location": "德国慕尼黑" },
+    { "period": "2019.04 — 2021.05", "role": "算法工程师（实习）", "org": "之江实验室 · 前沿基础研究中心", "location": "中国杭州" },
+    { "period": "2017.09 — 2023.03", "role": "计算机科学博士（直博）", "org": "浙江大学 · CAD&CG 国家重点实验室（陈为教授）", "location": "中国杭州" },
+    { "period": "2013.09 — 2017.06", "role": "软件工程学士", "org": "浙江大学", "location": "中国杭州" }
+  ],
+
+  "service": [
+    "CCF YOCSEF 杭州 AC 委员",
+    "审稿人：IEEE TVCG、IEEE VIS、IEEE PacificVis、ChinaVis"
+  ]
+}
