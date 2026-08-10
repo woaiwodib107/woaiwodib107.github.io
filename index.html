@@ -1306,6 +1306,7 @@ function shortVenue(v) {
   if (/计算机辅助设计与图形学|CAD-G/i.test(v)) return 'CAD&G';
   if (/软件学报|Journal of Software/i.test(v)) return '软件学报';
   if (/Intelligent Systems and Technology|Trans\. Intell\. Syst\.|TIST/i.test(v)) return 'ACM TIST';
+  if (/IFAC[- ]PapersOnLine|IFAC/i.test(v)) return 'IFAC';
   if (/Unmanned/i.test(v)) return 'IEEE ICUS';
   return v.split(/[(:,]/)[0].trim().slice(0, 24);
 }

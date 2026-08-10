@@ -87,11 +87,15 @@
       "confidence": "high"
     },
     {
+      "_comment_ifac": "Venue verified against Crossref: IFAC-PapersOnLine 53(5):566-571, DOI 10.1016/j.ifacol.2021.04.226. It was previously (incorrectly) listed as a PacificVis short paper.",
       "title": "A Visual Analytics Approach for Structural Differences among Transportation Networks",
       "authors": "Dongming Han, Jiacheng Pan, Cong Xie, Xiaodong Zhao, Wei Chen",
       "year": "2020",
-      "venue": "IEEE Pacific Visualization Symposium (Short Paper)",
-      "type": "manual",
+      "venue": "IFAC-PapersOnLine",
+      "doi": "https://doi.org/10.1016/j.ifacol.2021.04.226",
+      "pub_url": "https://doi.org/10.1016/j.ifacol.2021.04.226",
+      "author_position": "first",
+      "type": "article",
       "confidence": "high"
     },
     {
