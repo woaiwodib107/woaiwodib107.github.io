@@ -109,6 +109,11 @@
 
     { "_help_below": "Existing DBLP papers — add pdf_url / video_url / code_url / project_url here." },
     {
+      "_comment_nuwa": "Prototype source for the PacificVis 2024 paper, recovered from the author's own GitHub (github.com/woaiwodib107/nuwa — README documents the Nuwa prototype system).",
+      "title": "Nuwa: An Authoring Tool for Graph Visualizations",
+      "code_url": "https://github.com/woaiwodib107/nuwa"
+    },
+    {
       "title": "iNet: visual analysis of irregular transition in multivariate dynamic networks",
       "doi": "https://doi.org/10.1007/s11704-020-0013-1"
     },
