@@ -258,25 +258,27 @@
 
     /* ============== Main ============== */
     .main { min-width: 0; }
-    .section { margin-bottom: 22px; scroll-margin-top: 56px; }
+    .section { margin-bottom: 30px; scroll-margin-top: 60px; }
     .section-head {
-      display: flex; align-items: baseline; justify-content: space-between;
-      margin-bottom: 8px; gap: 10px;
+      display: flex; align-items: flex-end; justify-content: space-between;
+      margin-bottom: 12px; gap: 10px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--line);
     }
     .section-eyebrow {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 9px; color: var(--accent);
-      text-transform: uppercase; letter-spacing: 0.18em;
-      font-weight: 500; margin-bottom: 1px;
+      font-size: 11px; color: var(--ink-3);
+      text-transform: uppercase; letter-spacing: 0.16em;
+      font-weight: 600; margin-bottom: 3px;
       display: block;
     }
     .section-title {
       font-family: 'Inter', -apple-system, sans-serif;
-      font-size: 17px; font-weight: 700;
-      letter-spacing: -0.025em; color: var(--ink);
-      line-height: 1.1; text-transform: none;
+      font-size: 21px; font-weight: 700;
+      letter-spacing: -0.03em; color: var(--ink);
+      line-height: 1.08; text-transform: none;
     }
-    .section-meta { font-size: 11.5px; color: var(--ink-4); flex-shrink: 0; }
+    .section-meta { font-size: 12px; color: var(--ink-3); flex-shrink: 0; font-variant-numeric: tabular-nums; }
 
     .bio {
       font-family: 'Inter', -apple-system, sans-serif;
@@ -347,7 +349,7 @@
     }
     .news-item.fresh .news-date { color: var(--news-dot); font-weight: 600; }
     .news-item.fresh .news-date::before { content: "● "; color: var(--news-dot); }
-    .news-text { font-size: 12.5px; color: var(--ink-2); line-height: 1.5; }
+    .news-text { font-size: 13px; color: var(--ink-2); line-height: 1.5; }
     .news-text strong { color: var(--ink); font-weight: 600; }
     .news-text em { color: var(--accent-deep); font-style: normal; font-weight: 500; }
 
@@ -375,6 +377,9 @@
       line-height: 1.55;
     }
     .ftag-kind { background: var(--paper); }
+    .ftag-ccf { background: var(--paper); font-weight: 600; }
+    .ftag-ccf.ccf-a { border-color: var(--ink-3); color: var(--ink); }
+    .ftag-ccf.ccf-b { color: var(--ink-2); }
     .ftag .ftag-count {
       font-family: 'JetBrains Mono', monospace;
       font-size: 9px; color: var(--ink-4);
@@ -402,9 +407,9 @@
     .year-group { margin-bottom: 12px; }
     .year-label {
       font-family: 'Inter', -apple-system, sans-serif;
-      font-size: 14px; font-weight: 700;
+      font-size: 15px; font-weight: 700;
       color: var(--ink); letter-spacing: -0.02em;
-      margin-bottom: 5px;
+      margin-bottom: 7px;
       display: flex; align-items: baseline; gap: 8px;
       padding-bottom: 2px;
       border-bottom: 1px solid var(--line);
@@ -455,14 +460,14 @@
 
     .pub-title {
       font-family: 'Inter', -apple-system, sans-serif;
-      font-size: 14px; font-weight: 600;
-      color: var(--ink); line-height: 1.3;
-      margin-bottom: 3px; letter-spacing: -0.015em;
+      font-size: 15px; font-weight: 600;
+      color: var(--ink); line-height: 1.32;
+      margin-bottom: 4px; letter-spacing: -0.018em;
     }
     .pub-title a { color: var(--ink); }
     .pub-title a:hover { color: var(--accent); text-decoration: none; }
     .pub-authors {
-      font-size: 11.5px; color: var(--ink-3);
+      font-size: 12px; color: var(--ink-3);
       line-height: 1.45; margin-bottom: 3px;
     }
     .pub-authors .self {
@@ -471,8 +476,8 @@
     }
     .pub-venue {
       font-family: 'Inter', -apple-system, sans-serif;
-      font-style: italic; font-size: 12px;
-      color: var(--ink-2); margin-bottom: 6px;
+      font-style: italic; font-size: 12.5px;
+      color: var(--ink-2); margin-bottom: 7px;
     }
     .pub-venue::before { content: "in "; color: var(--ink-4); font-style: normal; }
     .pub-venue .vbadge {
@@ -484,10 +489,9 @@
       padding: 1px 6px; border-radius: 3px;
       margin-left: 6px; vertical-align: 1px;
     }
-    .pub-venue .vbadge.tier1 { background: #1d3557; }
-    .pub-venue .vbadge.tier2 { background: #5d6878; }
-    html[data-theme="dark"] .pub-venue .vbadge.tier1 { background: #7da8d8; color: #0d0e10; }
-    html[data-theme="dark"] .pub-venue .vbadge.tier2 { background: #8a96a4; color: #0d0e10; }
+    .pub-venue .vbadge.ccf-a { background: var(--ink); color: var(--paper); }
+    .pub-venue .vbadge.ccf-b { background: var(--ink-3); color: var(--paper); }
+    .pub-venue .vbadge.ccf-c { background: transparent; color: var(--ink-3); box-shadow: inset 0 0 0 1px var(--line); }
 
     .pub-abstract-toggle {
       display: inline-flex; align-items: center; gap: 3px;
@@ -628,7 +632,7 @@
       padding-top: 2px;
     }
     .item-body { min-width: 0; }
-    .item-title { font-size: 13px; font-weight: 600; color: var(--ink); line-height: 1.35; margin-bottom: 2px; }
+    .item-title { font-size: 13.5px; font-weight: 600; color: var(--ink); line-height: 1.35; margin-bottom: 2px; }
     .item-title-zh { font-size: 12.5px; font-weight: 600; color: var(--ink); line-height: 1.35; }
     .item-title-en { font-size: 11.5px; font-style: italic; color: var(--ink-3); line-height: 1.35; margin-top: 1px; }
     .item-meta { font-size: 11.5px; color: var(--ink-3); }
@@ -714,10 +718,6 @@
       text-transform: uppercase; letter-spacing: 0.07em; font-weight: 600;
     }
 
-    /* ============== Featured (selected) cards ============== */
-    .pub.featured { border-left: 3px solid var(--accent); }
-    .badge.featured { background: var(--accent); color: var(--paper); }
-    .badge.featured::before { content: "★"; font-size: 8px; margin-right: 1px; }
 
     /* ============== Cited-by chip + Cite/BibTeX ============== */
     .pub-cited {
@@ -788,7 +788,8 @@
       .pub-teaser { max-width: 110px; }
       .news-item, .item { grid-template-columns: 1fr; gap: 3px; }
       .news-date, .item-period { font-size: 10.5px; }
-      .section-title { font-size: 18px; }
+      .section-title { font-size: 19px; }
+      .section-eyebrow { font-size: 10px; }
       .filter-row { gap: 4px; }
       .search-box { width: 100%; margin-left: 0; margin-top: 4px; }
       /* Don't trap touch users in a nested 560px scroll box — let the lists flow into the page. */
@@ -872,17 +873,10 @@
       <ul class="item-list" id="expList"></ul>
     </section>
 
-    <section id="selected-section" class="section" style="display:none;">
-      <div class="section-head">
-        <div><span class="section-eyebrow">// 04</span><h2 class="section-title" data-i18n="selected">Selected Publications</h2></div>
-        <span class="section-meta" id="selectedMeta"></span>
-      </div>
-      <div id="selectedList"></div>
-    </section>
 
     <section id="publications-section" class="section">
       <div class="section-head">
-        <div><span class="section-eyebrow">// 05</span><h2 class="section-title" data-i18n="publications_all">All Publications</h2></div>
+        <div><span class="section-eyebrow">// 04</span><h2 class="section-title" data-i18n="publications_all">All Publications</h2></div>
         <span class="section-meta-wrap">
           <span class="section-meta" id="pubCount" aria-live="polite"></span>
           <span class="scroll-hint" data-i18n="scroll_hint">Scroll</span>
@@ -893,26 +887,26 @@
     </section>
 
     <section id="projects" class="section" style="display:none;">
-      <div class="section-head"><div><span class="section-eyebrow">// 06</span><h2 class="section-title" data-i18n="projects">Funded Projects</h2></div></div>
+      <div class="section-head"><div><span class="section-eyebrow">// 05</span><h2 class="section-title" data-i18n="projects">Funded Projects</h2></div></div>
       <ul class="item-list" id="projectsList"></ul>
     </section>
 
     <section id="awards" class="section" style="display:none;">
       <div class="section-head">
-        <div><span class="section-eyebrow">// 07</span><h2 class="section-title" data-i18n="awards_section">Awards & Honors</h2></div>
+        <div><span class="section-eyebrow">// 06</span><h2 class="section-title" data-i18n="awards_section">Awards & Honors</h2></div>
         <span class="scroll-hint" data-i18n="scroll_hint">Scroll</span>
       </div>
       <div class="scroll-wrap"><div class="scroll-box compact"><ul class="item-list" id="awardsList"></ul></div></div>
     </section>
 
     <section id="service" class="section" style="display:none;">
-      <div class="section-head"><div><span class="section-eyebrow">// 08</span><h2 class="section-title" data-i18n="service">Service</h2></div></div>
+      <div class="section-head"><div><span class="section-eyebrow">// 07</span><h2 class="section-title" data-i18n="service">Service</h2></div></div>
       <ul class="item-list" id="serviceList"></ul>
     </section>
 
     <section id="patents" class="section" style="display:none;">
       <div class="section-head">
-        <div><span class="section-eyebrow">// 09</span><h2 class="section-title" data-i18n="patents">Patents</h2></div>
+        <div><span class="section-eyebrow">// 08</span><h2 class="section-title" data-i18n="patents">Patents</h2></div>
         <span class="section-meta-wrap">
           <span class="section-meta" id="patentsMeta"></span>
           <span class="scroll-hint" data-i18n="scroll_hint">Scroll</span>
@@ -932,15 +926,51 @@
 
 <script>
 const SELF_NAME_PATTERNS = [/dongming\s*han/gi, /\bD\.\s*Han\b/g, /韩东明/g];
-const TIER1 = /TVCG|IEEE Vis|ACM CHI|ACM KDD|IEEE Transactions on Visualization|IJCAI|Automated Software Engineering|\bASE\b/i;
-// NOTE: match BOTH the expanded venue name and DBLP's abbreviation — records come
-// through as e.g. "J. Vis." / "Multim. Syst." / "Frontiers of Information Technology
-// & Electronic Engineering", so abbreviation-only or full-name-only patterns silently
-// drop the badge.
-const TIER2 = /Visual Informatics|Information Visualization|Frontiers of Computer Science|Journal of Computer Science|FITEE|Frontiers of Information Technology|Frontiers Inf\. Technol\.|Pacific Visualization|PacificVis|ChinaVis|Journal of Visualization|J\. Vis\.|Multimedia Systems|Multim\. Syst\./i;
+// ============================================================================
+// CCF rank table (中国计算机学会推荐目录). Ordered — FIRST match wins, so put
+// specific patterns above generic ones. A venue that is NOT in this table gets
+// NO badge, which is deliberate: an absent badge is far better than a wrong one.
+// `zh: true` marks the 中文科技期刊目录 (shown as "CCF-A 中文").
+// To adjust a rank, edit this one table — the badges, the filter chips and the
+// counts all derive from it.
+// ============================================================================
+const CCF_RANKS = [
+  // --- A ---
+  [/IEEE Trans(actions)?\.? on Visualization|TVCG/i,                         'A'],
+  [/Automated Software Engineering|\bASE\b|\bASE \d{4}/i,                     'A'],
+  [/IEEE Vis\b|InfoVis|VAST/i,                                               'A'],
+  [/ACM CHI|\bCHI \d{4}/i,                                                   'A'],
+  [/\bKDD\b|Knowledge Discovery and Data Mining/i,                           'A'],
+  [/IJCAI|\bAAAI\b|\bICML\b|\bNeurIPS\b|\bCVPR\b|\bICCV\b/i,                 'A'],
+  [/软件学报|Journal of Software/i,                                          'A', true],
+  [/计算机研究与发展|Journal of Computer Research and Development/i,          'A', true],
+  [/计算机辅助设计与图形学学报|Journal of Computer-Aided Design/i,            'A', true],
+  // --- B ---
+  [/Frontiers of Computer Science|Frontiers Comput\. Sci\./i,                 'B'],
+  [/Journal of Computer Science and Technology|J\. Comput\. Sci\. Technol\.|\bJCST\b/i, 'B'],
+  // --- C ---
+  [/Pacific Visualization|PacificVis/i,                                      'C'],
+  [/Multimedia Systems|Multim\. Syst\./i,                                    'C'],
+  [/Frontiers of Information Technology|Frontiers Inf\. Technol\.|FITEE/i,   'C'],
+  [/Visual Informatics/i,                                                    'C'],
+  [/Intelligent Systems and Technology|Trans\. Intell\. Syst\.|\bTIST\b/i,    'C'],
+  // NOT in the CCF catalog (verified against the 7th edition, 2026-03-31) — these
+  // deliberately get NO badge: IEEE Computer Graphics and Applications (CG&A),
+  // Information Visualization (SAGE), Journal of Visualization, ChinaVis,
+  // IFAC-PapersOnLine, IEEE ICUS.
+];
+// Preprints must never carry a rank even if the title mentions a venue.
+const PREPRINT = /^\s*CoRR|arXiv/i;
+function ccfRank(venue) {
+  const v = String(venue || '');
+  if (!v || PREPRINT.test(v)) return null;
+  for (const [re, rank, zh] of CCF_RANKS) if (re.test(v)) return { rank, zh: !!zh };
+  return null;
+}
+
 
 let DATA = null, PROFILE = null, PROFILE_EN = null, PROFILE_ZH = null;
-let activeFilters = { kind: 'all', venue: null, year: null };
+let activeFilters = { kind: 'all', venue: null, year: null, ccf: null };
 let currentSearch = '';
 let newsExpanded = false;
 let _idSeq = 0; // monotonic counter for deterministic element ids (abstract/bibtex panels)
@@ -949,7 +979,7 @@ let currentLang = localStorage.getItem('lang') || (navigator.language && navigat
 const STRINGS = {
   en: {
     about: 'About', news: 'News',
-    selected: 'Selected Publications', selected_nav: 'Selected', publications_all: 'All Publications', publications_nav: 'Publications',
+    publications_all: 'All Publications', publications_nav: 'Publications',
     awards_section: 'Awards & Honors', awards_nav: 'Awards',
     patents: 'Patents', projects: 'Funded Projects',
     experience: 'Experience', service: 'Service',
@@ -959,7 +989,7 @@ const STRINGS = {
     show_all_news: 'Show all', show_recent: 'Show recent',
     all: 'All', first_author: 'First-author', with_pdf: 'With PDF',
     search_placeholder: 'Search title, author, venue…',
-    featured: 'Featured', abstract: 'Abstract', hide_abstract: 'Hide Abstract',
+    abstract: 'Abstract', hide_abstract: 'Hide Abstract',
     papers: 'papers', paper: 'paper', updates: 'updates', update: 'update',
     granted: 'granted',
     senior: 'Senior', dark: 'Dark', light: 'Light',
@@ -968,7 +998,7 @@ const STRINGS = {
   },
   zh: {
     about: '关于', news: '动态',
-    selected: '代表论文', selected_nav: '代表作', publications_all: '全部论文', publications_nav: '论文',
+    publications_all: '全部论文', publications_nav: '论文',
     awards_section: '获奖', awards_nav: '荣誉',
     patents: '专利', projects: '在研项目',
     experience: '经历', service: '学术服务',
@@ -978,7 +1008,7 @@ const STRINGS = {
     show_all_news: '查看全部', show_recent: '收起',
     all: '全部', first_author: '一作', with_pdf: '含 PDF',
     search_placeholder: '搜索标题、作者、会议…',
-    featured: '精选', abstract: '摘要', hide_abstract: '收起摘要',
+    abstract: '摘要', hide_abstract: '收起摘要',
     papers: '篇', paper: '篇', updates: '条', update: '条',
     granted: '已授权',
     senior: '通讯', dark: '深色', light: '浅色',
@@ -1014,7 +1044,6 @@ function renderAll() {
   renderCTA();
   renderNews();
   renderExperience();
-  renderSelected();
   renderFilterBar();
   renderPublications();
   renderProjects();
@@ -1123,7 +1152,6 @@ function renderSidebar(a) {
     ['#about', t('about')],
     PROFILE && (PROFILE.news||[]).length ? ['#news', t('news')] : null,
     PROFILE && (PROFILE.experience||[]).length ? ['#experience', t('experience')] : null,
-    PROFILE && (PROFILE.selected||[]).length ? ['#selected-section', t('selected_nav')] : null,
     ['#publications-section', t('publications_nav')],
     PROFILE && (PROFILE.awards||[]).length ? ['#awards', t('awards_nav')] : null,
     PROFILE && (PROFILE.service||[]).length ? ['#service', t('service')] : null,
@@ -1200,31 +1228,6 @@ function renderNews() {
 }
 function toggleNews() { newsExpanded = !newsExpanded; renderNews(); }
 
-function renderSelected() {
-  const keys = (PROFILE && PROFILE.selected) || [];
-  const section = document.getElementById('selected-section');
-  if (!section) return;
-  const pubs = DATA.publications || [];
-  const picks = [];
-  const seen = new Set();
-  for (const key of keys) {
-    const k = String(key).toLowerCase();
-    if (k.length < 4) {
-      console.warn(`[selected] key ${JSON.stringify(key)} is too short — likely matches multiple papers; pick a longer substring`);
-    }
-    const matches = pubs.filter(p => p.title && p.title.toLowerCase().includes(k) && !seen.has(p.title));
-    if (matches.length > 1) {
-      console.warn(`[selected] key ${JSON.stringify(key)} matched ${matches.length} papers — using first; tighten the substring to disambiguate`);
-    }
-    const match = matches[0];
-    if (match) { picks.push(match); seen.add(match.title); }
-  }
-  if (!picks.length) { section.style.display = 'none'; return; }
-  section.style.display = 'block';
-  const unit = t(picks.length === 1 ? 'paper' : 'papers');
-  document.getElementById('selectedMeta').textContent = `${picks.length} ${unit}`;
-  document.getElementById('selectedList').innerHTML = picks.map(p => renderPub(p, { featured: true })).join('');
-}
 
 function renderFilterBar() {
   const pubs = DATA.publications || [];
@@ -1236,6 +1239,8 @@ function renderFilterBar() {
   const venueGroups = {};
   for (const p of pubs) { const v = shortVenue(p.venue); if (v) venueGroups[v] = (venueGroups[v] || 0) + 1; }
   const venues = Object.entries(venueGroups).sort((a, b) => b[1] - a[1]);
+  const ccfCounts = { A: 0, B: 0, C: 0 };
+  for (const p of pubs) { const c = ccfRank(p.venue); if (c) ccfCounts[c.rank]++; }
   const yearGroups = {};
   for (const p of pubs) yearGroups[p.year] = (yearGroups[p.year] || 0) + 1;
   const years = Object.keys(yearGroups).sort((a, b) => b.localeCompare(a));
@@ -1247,6 +1252,8 @@ function renderFilterBar() {
       <button class="ftag ftag-kind ${kindActive('all')}" data-kind="all" aria-pressed="${activeFilters.kind === 'all'}">${t('all')} <span class="ftag-count">${kindCounts.all}</span></button>
       <button class="ftag ftag-kind ${kindActive('first')}" data-kind="first" aria-pressed="${activeFilters.kind === 'first'}">${t('first_author')} <span class="ftag-count">${kindCounts.first}</span></button>
       <button class="ftag ftag-kind ${kindActive('pdf')}" data-kind="pdf" aria-pressed="${activeFilters.kind === 'pdf'}">${t('with_pdf')} <span class="ftag-count">${kindCounts.pdf}</span></button>
+      <span class="filter-sep"></span>
+      ${['A','B','C'].filter(r => ccfCounts[r]).map(r => `<button class="ftag ftag-ccf ccf-${r.toLowerCase()} ${activeFilters.ccf === r ? 'active' : ''}" data-ccf="${r}" aria-pressed="${activeFilters.ccf === r}">CCF-${r} <span class="ftag-count">${ccfCounts[r]}</span></button>`).join('')}
       <span class="filter-sep"></span>
       ${venues.map(([v, c]) => `<button class="ftag ${activeFilters.venue === v ? 'active' : ''}" data-venue="${esc(v)}" aria-pressed="${activeFilters.venue === v}">${esc(v)} <span class="ftag-count">${c}</span></button>`).join('')}
       <span class="filter-sep"></span>
@@ -1267,6 +1274,7 @@ function onFilterClick(e) {
   const btn = e.target.closest('.ftag');
   if (!btn) return;
   if (btn.dataset.kind) toggleFilter('kind', btn.dataset.kind, btn);
+  else if (btn.dataset.ccf) toggleFilter('ccf', btn.dataset.ccf, btn);
   else if (btn.dataset.venue) toggleFilter('venue', btn.dataset.venue, btn);
   else if (btn.dataset.year) toggleFilter('year', btn.dataset.year, btn);
 }
@@ -1275,6 +1283,9 @@ function toggleFilter(category, value, btn) {
   if (category === 'kind') {
     activeFilters.kind = value;
     document.querySelectorAll('.ftag[data-kind]').forEach(b => { const on = b === btn; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on); });
+  } else if (category === 'ccf') {
+    activeFilters.ccf = activeFilters.ccf === value ? null : value;
+    document.querySelectorAll('.ftag[data-ccf]').forEach(b => { const on = !!activeFilters.ccf && b.dataset.ccf === activeFilters.ccf; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on); });
   } else if (category === 'venue') {
     activeFilters.venue = activeFilters.venue === value ? null : value;
     document.querySelectorAll('.ftag[data-venue]').forEach(b => { const on = !!activeFilters.venue && b.dataset.venue === activeFilters.venue; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on); });
@@ -1345,6 +1356,7 @@ function renderPublications() {
 function matchesFilters(p) {
   if (activeFilters.kind === 'first' && p.author_position !== 'first') return false;
   if (activeFilters.kind === 'pdf' && !p.pdf_url) return false;
+  if (activeFilters.ccf) { const c = ccfRank(p.venue); if (!c || c.rank !== activeFilters.ccf) return false; }
   if (activeFilters.venue && shortVenue(p.venue) !== activeFilters.venue) return false;
   if (activeFilters.year && p.year !== activeFilters.year) return false;
   if (currentSearch) {
@@ -1376,7 +1388,6 @@ function renderPub(p, opts = {}) {
   links.push(`<button class="pub-link cite" type="button" aria-expanded="false" aria-controls="${bibId}" onclick="toggleBibtex(this)">${icon('quote')} ${t('cite')}</button>`);
 
   const tags = [];
-  if (opts.featured) tags.push(`<span class="badge featured">${t('featured')}</span>`);
   if (p.author_position === 'last') tags.push(`<span class="badge last">${t('senior')}</span>`);
   if (p.award) tags.push(`<span class="badge award">${esc(p.award)}</span>`);
   const citedChip = Number(p.citations) >= 5 ? `<span class="pub-cited">${t('cited_by')} ${esc(String(p.citations))}</span>` : '';
@@ -1397,7 +1408,6 @@ function renderPub(p, opts = {}) {
   const bibtexBlock = `<div class="pub-bibtex" id="${bibId}"><button class="pub-bibtex-copy" type="button" onclick="copyBibtex(this)">${t('copy')}</button><pre>${esc(makeBibtex(p))}</pre></div>`;
 
   const classes = ['pub'];
-  if (opts.featured) classes.push('featured');
   if (!hasTeaser) classes.push('no-teaser');
 
   return `
@@ -1544,9 +1554,10 @@ function linkBtn(href, ico, label, extra = '') {
   return `<a class="pub-link ${extra} ${isLocal ? 'local' : ''}" href="${esc(safe)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(label)} (opens in new tab)">${icon(ico)} ${esc(label)}</a>`;
 }
 function venueBadge(v) {
-  if (TIER1.test(v)) return '<span class="vbadge tier1">A*</span>';
-  if (TIER2.test(v)) return '<span class="vbadge tier2">A</span>';
-  return '';
+  const c = ccfRank(v);
+  if (!c) return '';
+  const label = c.zh ? `CCF-${c.rank} ${currentLang === 'zh' ? '中文' : 'CN'}` : `CCF-${c.rank}`;
+  return `<span class="vbadge ccf-${c.rank.toLowerCase()}">${label}</span>`;
 }
 
 function renderAwards() {

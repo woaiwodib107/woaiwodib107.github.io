@@ -1,53 +1,101 @@
 {
   "_comment": "Personal profile — bio, news, awards, patents, projects, experience, selected. Edit freely.",
-
   "bio": "I am an **Algorithm Lead** in the AIGC Code-Generation group at **Hithink RoyalFlush AI Research Institute** (浙江核新同花顺), where I build *enterprise-grade code-generation frameworks* for human–agent collaborative development, *generative visual analytics* for finance, and *visual narrative paradigms* for vertical scenarios — serving tens of millions of users across dozens of products.\n\nI received my **Ph.D.** from the *State Key Lab of CAD & CG, Zhejiang University* (2017–2023), advised by Prof. *Wei Chen*, and was a CSC-funded **visiting Ph.D.** at *TU Munich* under Prof. *Rüdiger Westermann* (2021–2022). I completed my **postdoctoral research** jointly hosted by Hithink and ZJU (2023–2025) on visual generative LLMs for finance.\n\nI currently serve as an **AC Committee Member of YOCSEF Hangzhou** (CCF). My research lies at the intersection of **Code Generation, AIGC**, and **Information Visualization & Visual Analytics**.",
-
   "_tagline": "One-line subtitle shown under the name in the hero",
   "tagline": "Building enterprise-grade code generation, generative visual analytics, and visual narrative paradigms — for finance and beyond.",
-
   "cta": {
     "title": "Work with Me",
     "body": "I'm actively recruiting **research interns**, **algorithm engineers**, and **collaborators** for our AIGC Code-Generation and Financial Visual-Analytics teams at Hithink. If you're excited about *human–agent collaborative development*, *visual generative LLMs*, or *interactive visualization at industry scale*, I'd love to hear from you.",
     "email": "dongminghan@zju.edu.cn",
     "buttons": [
-      { "label": "Email me", "href": "mailto:dongminghan@zju.edu.cn" }
+      {
+        "label": "Email me",
+        "href": "mailto:dongminghan@zju.edu.cn"
+      }
     ]
   },
-
-  "_selected_help": "Match by case-insensitive substring of the paper title. Order matters — first item shows first.",
-  "selected": [
-    "Quantivine",
-    "Nuwa",
-    "GraphFederator",
-    "iNet",
-    "Structure-Based Suggestive",
-    "NetV.js"
-  ],
-
   "news": [
-    { "date": "2026-05", "text": "New preprint: *Chart-FR1: Visual Focus-Driven Fine-Grained Reasoning on Dense Charts* is out on **arXiv**." },
-    { "date": "2025-11", "text": "Successfully completed my **postdoctoral research** at Hithink × ZJU." },
-    { "date": "2025-10", "text": "Won **Winner Award** at *PacificVis 2025 Visualization Storytelling Contest*." },
-    { "date": "2025-09", "text": "*SGCR: A Specification-Grounded Framework for Trustworthy LLM Code Review* accepted at **ASE 2025** (CCF-A)." },
-    { "date": "2025-07", "text": "*HiVis: A Web-Based Library for Financial Data Visualizations* accepted at **ChinaVis 2025**." },
-    { "date": "2025-06", "text": "*A Summarization-Based Pattern-Aware Matrix Reordering Approach* accepted at **JCST** (CCF-B)." },
-    { "date": "2024-09", "text": "Awarded *2024 浙江省博士后科研项目择优资助 (Second Class)* — **Principal Investigator**." },
-    { "date": "2024-06", "text": "Top-3 at **PacificVis 2024 Visualization Storytelling Contest**." },
-    { "date": "2024-04", "text": "Two papers accepted to **PacificVis 2024**: *Nuwa: An Authoring Tool for Graph Visualizations* and *GraphFederator*." },
-    { "date": "2023-08", "text": "Won **First Prize** at the *ChinaVis 2023 Challenge*." },
-    { "date": "2023-04", "text": "Joined **Hithink RoyalFlush** as Algorithm Lead for AIGC Code Generation." },
-    { "date": "2023-03", "text": "Successfully defended my Ph.D. thesis at Zhejiang University." }
+    {
+      "date": "2026-05",
+      "text": "New preprint: *Chart-FR1: Visual Focus-Driven Fine-Grained Reasoning on Dense Charts* is out on **arXiv**."
+    },
+    {
+      "date": "2025-11",
+      "text": "Successfully completed my **postdoctoral research** at Hithink × ZJU."
+    },
+    {
+      "date": "2025-10",
+      "text": "Won **Winner Award** at *PacificVis 2025 Visualization Storytelling Contest*."
+    },
+    {
+      "date": "2025-09",
+      "text": "*SGCR: A Specification-Grounded Framework for Trustworthy LLM Code Review* accepted at **ASE 2025** (CCF-A)."
+    },
+    {
+      "date": "2025-07",
+      "text": "*HiVis: A Web-Based Library for Financial Data Visualizations* accepted at **ChinaVis 2025**."
+    },
+    {
+      "date": "2025-06",
+      "text": "*A Summarization-Based Pattern-Aware Matrix Reordering Approach* accepted at **JCST** (CCF-B)."
+    },
+    {
+      "date": "2024-09",
+      "text": "Awarded *2024 浙江省博士后科研项目择优资助 (Second Class)* — **Principal Investigator**."
+    },
+    {
+      "date": "2024-06",
+      "text": "Top-3 at **PacificVis 2024 Visualization Storytelling Contest**."
+    },
+    {
+      "date": "2024-04",
+      "text": "Two papers accepted to **PacificVis 2024**: *Nuwa: An Authoring Tool for Graph Visualizations* and *GraphFederator*."
+    },
+    {
+      "date": "2023-08",
+      "text": "Won **First Prize** at the *ChinaVis 2023 Challenge*."
+    },
+    {
+      "date": "2023-04",
+      "text": "Joined **Hithink RoyalFlush** as Algorithm Lead for AIGC Code Generation."
+    },
+    {
+      "date": "2023-03",
+      "text": "Successfully defended my Ph.D. thesis at Zhejiang University."
+    }
   ],
-
   "awards": [
-    { "year": "2025", "title": "Winner — PacificVis 2025 Visualization Storytelling Contest", "issuer": "IEEE Pacific Visualization", "url": "" },
-    { "year": "2024", "title": "Top-3 — PacificVis 2024 Visualization Storytelling Contest", "issuer": "IEEE Pacific Visualization", "url": "" },
-    { "year": "2024", "title": "示范引领奖 — 中国（宁波）智能产品创新大赛", "issuer": "China (Ningbo) Intelligent Product Innovation Contest", "url": "" },
-    { "year": "2024", "title": "Silver Award — American Good Design International Design Competition", "issuer": "American Good Design", "url": "" },
-    { "year": "2023", "title": "First Prize — ChinaVis 2023 Data Challenge", "issuer": "ChinaVis", "url": "" }
+    {
+      "year": "2025",
+      "title": "Winner — PacificVis 2025 Visualization Storytelling Contest",
+      "issuer": "IEEE Pacific Visualization",
+      "url": ""
+    },
+    {
+      "year": "2024",
+      "title": "Top-3 — PacificVis 2024 Visualization Storytelling Contest",
+      "issuer": "IEEE Pacific Visualization",
+      "url": ""
+    },
+    {
+      "year": "2024",
+      "title": "示范引领奖 — 中国（宁波）智能产品创新大赛",
+      "issuer": "China (Ningbo) Intelligent Product Innovation Contest",
+      "url": ""
+    },
+    {
+      "year": "2024",
+      "title": "Silver Award — American Good Design International Design Competition",
+      "issuer": "American Good Design",
+      "url": ""
+    },
+    {
+      "year": "2023",
+      "title": "First Prize — ChinaVis 2023 Data Challenge",
+      "issuer": "ChinaVis",
+      "url": ""
+    }
   ],
-
   "patents": [
     {
       "year": "2024",
@@ -98,7 +146,6 @@
       "status": "Granted"
     }
   ],
-
   "projects": [
     {
       "year": "2024 – present",
@@ -115,7 +162,6 @@
       "number": "2024C01034"
     }
   ],
-
   "experience": [
     {
       "period": "2023.04 – present",
@@ -154,7 +200,6 @@
       "location": "Hangzhou, China"
     }
   ],
-
   "service": [
     "AC Committee Member, YOCSEF Hangzhou (CCF)",
     "Reviewer: IEEE TVCG, IEEE VIS, IEEE PacificVis, ChinaVis"
